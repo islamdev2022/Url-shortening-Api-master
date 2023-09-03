@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: hsl(247, 74%, 95%);
+    margin: 0;
+}
+header{
+    display: flex ;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    height: fit-content;
+    position: relative;
+    left: 16%;
+    top: 15px;
+    color:hsl(0, 0%, 63%) ;
+    font-size: 12Px;
+}
+
+.btns{
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    display: flex;
+    gap: 30px;
+}
+#login{
+    background-color: white;
+    border: none;
+    color:hsl(0, 0%, 63%) ;
+    font-weight: bold;    
+    font-size: 13px;
+    cursor: pointer;
+}
+#signup{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 7px 8px 8px 8px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+header img{
+    height: 40px;
+    width: 100px;
+    position: relative;
+    top: 20px;
+    left: 12%;
+}
+
+/* HEADER ENDS HERE */
+
+.home{
+    
+    display: flex;
+    height: 620px;
+    background-color: #fff;
+}
+.left h1{
+    font-size: 50px;
+    margin-top: 150px;
+    width: 60%;
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left p{
+  color:hsl(0, 0%, 63%) ;
+ width: 60%;
+ display:table;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 30px;
+    font-size: 15px;
+}
+.left button{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 9px 0px 10px 0px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 30px;
+    left: 22%;
+    width: 160px;
+}
+.right{
+   display: table;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 110px;
+
+}
+.right img{
+    width: 80%;
+    position: relative;
+    left: 50px;
+}
+.inputlink{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 30px 0px 30px;
+    height: 100px;
+    width: 50%;
+    background-image: url(images/bg-shorten-desktop.svg);
+    background-color: hsl(261, 32%, 25%);
+    border-radius: 10px;
+    position: relative;
+    bottom: 50px;
+   
+}
+#inputlink{
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    border-color: transparent;
+    outline: none;
+    position: relative;
+    font-size: 13px;
+}
+.inputlink span{
+    font-size: 12px;
+    color: hsl(0, 87%, 67%);
+    display: none;
+}
+
+.notvalid#inputlink{
+    border-color:hsl(0, 87%, 67%);
+}
+.notvalid#inputlink::placeholder{
+    color:hsl(0, 87%, 67%);
+}
+.notvalid#empty{
+    display: block;
+}
+.notvalid#notvalid{
+    display: block;
+}
+
+#inputlink::placeholder{
+    padding-left: 20px;
+}
+.inputlink button{
+    position: relative;
+    left: 20px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 42px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#shorten{
+    width: 50%;
+    display: table;
+    margin-left: auto;
+    margin-right:auto ;
+    padding-right: 100px;
+    margin-top: -10px;
+}
+#shorten li{ 
+    margin-bottom: 20px;
+    width: 110%;
+    height: 50Px;
+    display: table;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.short{
+   float:right;
+    color: hsl(180, 66%, 49%);
+    position: relative;
+    right: 95px;
+    top: 15px;
+    font-size: 13px;
+    width: 110px;
+}
+.copy{
+    float: right ;
+    position: relative;
+    left: 100px;
+    top: 12px;
+    background-color:hsl(180, 66%, 49%);
+    width: 65px;
+    border-color: transparent;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.long{
+    align-items: center;
+    padding-left: 20px;
+    color: black;
+    font-size: 12px;
+    display: inline-block;
+    width: 470px;
+    position: relative;
+    top: 12px;
+}
+.text{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+.text p{ 
+    width: 390px;
+    color: hsl(0, 0%, 63%);
+    font-size: 13px;
+}
+.statistics{
+    display: flex;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    gap: 30px; 
+    height: 200px;
+}
+.stats{
+    
+    background-color: #fff;
+    padding: 0px 15px 0px 20px;
+    border-radius: 10px;
+
+}
+.stats p,.stats h4{
+    position: relative;
+    bottom: 30px;
+}
+.stats p {
+    font-size: 13px;
+    color: hsl(0, 0%, 63%);
+}
+
+#detailed div,#brand div,#costume div{
+    background-image: url(images/icon-brand-recognition.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    position: relative;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+}
+#brand div {
+    background-image: url(images/icon-brand-recognition.svg);
+}
+#detailed div{
+    background-image: url(images/icon-detailed-records.svg);
+}
+#costume div{
+    background-image: url(images/icon-fully-customizable.svg);
+}
+#detailed{
+    position: relative;
+    top: 30px;
+}
+#costume{
+    position: relative;
+    top: 60px;
+}
+#detailed::before,#costume::before{
+    content: "";
+    background-color:  hsl(180, 66%, 49%);
+    width: 30px;
+    height: 6px;    
+    position: absolute;
+    left: -30px;
+    top: 80px;
+}
+
+
+svg {
+    width: 3.25em;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+    position: relative;
+    right: 50%;
+    left: 47%;
+    top:120px;
+    z-index: 1;
+    display: none;
+   }
+   
+   circle {
+    fill: none;
+    stroke: hsl(241, 58%, 62%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+    
+    
+   }
+   
+   @keyframes rotate4 {
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes dash4 {
+    0% {
+     stroke-dasharray: 1, 200;
+     stroke-dashoffset: 0;
+    }
+   
+    50% {
+     stroke-dasharray: 90, 200;
+     stroke-dashoffset: -35px;
+    }
+   
+    100% {
+     stroke-dashoffset: -125px;
+    }
+   }
+   
+
+.boost{
+    margin-top: 150px;
+    height: 190Px;   
+    background-color:   hsl(257, 27%, 26%); 
+    background-image: url(images/bg-boost-desktop.svg);
+}
+.boost h2,.boost button{
+   display: table;
+   margin-left: auto;
+   margin-right:auto ;
+   position: relative;
+   top: 40px;
+}
+.boost h2{
+    color: white;
+}
+.boost button{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 9px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(260, 8%, 14%);
+    height: 200px;
+    
+}
+#logo{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 80px;
+    margin-top: 30px;
+}
+.help{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.bold{
+    color: #fff !important;
+    margin-bottom: 14px !important;
+}
+.help li{
+    list-style: none;
+    color :rgb(161, 161, 161);
+    font-size: 13px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.help li:hover{
+    color:hsl(180, 66%, 49%) ;
+}
+.media img{
+    height: 20px;
+    width: 20Px;
+    margin-right: 10px;
+}
+.media img:hover{
+color: cyan;
+}
+.media{
+    position: absolute;
+    right: 60px;
+    margin-top: 40px;
+}
+
+@media (max-width:1024px){
+   #inputlink{
+    width: 70%;
+   }
+}
+@media (max-width:1005px){
+    .left{
+        position: relative;
+        bottom: 90px;
+    }
+}
+@media (max-width:900px){
+    .statistics{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btns{
+        position: absolute;
+        right: 0;
+    }
+    .media{
+        position: relative;
+        left:150px;
+    }
+    body{
+        width: 120%;
+    }
+}
+@media (max-width:720px){
+    body{
+        display: grid;
+      
+        width: 140%;
+    }
+}
+
+
+@media (max-width:475px){
+   body{
+   
+    margin: 0;
+   }
+   .nav{
+    display: none;
+   }
+   .btns{
+    position: absolute;
+    right:  0Px;
+   }
+    .home{
+        display: block;
+        height: 100%;
+        position: relative;
+        bottom: 150px;
+    }
+    .left{
+        position: relative;
+        top: 350px;
+    }
+    .right{
+        position: relative;
+        bottom: 440px;
+        width: 80%;
+    }
+    .inputlink{
+        width: 50%;
+        position: relative;
+        right: 20px;
+    }
+    #inputlink{
+        width: 100%;
+        position: relative;
+        bottom: 19px;
+    }
+    #short{
+        width: 103%;
+        position: relative;
+        left: 0;
+        top: 5px;
+    }
+    .stats{
+        width: 300px;
+        position: relative;
+        left: 150px;
+    }
+    #shorten li{
+    height: 80px;
+        width: 10%;
+        position: relative;
+        left: 10px;
+    }
+    .long{
+        width: 300px;
+    }
+    .copy{
+        position: relative;
+        left: 50px;
+    }
+    .short{
+        position: relative;
+        right: 150px;
+    }
+    footer{
+        display: block;
+        height: 500px;
+        width: 100%;
+    }
+    .help{
+        display: block;
+        position: relative;
+        right: 20px;
+        top: 90px;        
+       text-align: center;
+    }
+    .media{
+        position: relative;
+        top: 55px;
+        left: 190px;
+    }
+    #logo{
+        position: absolute;
+        left: 200px;
+    }
+}
